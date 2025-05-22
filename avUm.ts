@@ -4,10 +4,10 @@ function sobreMim (saudacao: string, idade: number,
             tenho ${idade} gosto de ${lazer}
             e tenho como profissao ${profissao}`);
     }          
-
-let saudacao : string = `Olá Mundo`;
-let idade : number = 16;
-let lazer : string = `Assistir Outer Banks`;
-let profissao: string = `programador`;
+let teclado = require (`prompt-sync`) ();
+let saudacao : string = (teclado(`Digite sua saudação: `));
+let idade : number = parseInt(teclado(`Digite sua idade: `));
+let lazer : string = (teclado(`Digite seu lazer favorito: ` ));
+let profissao: string = (teclado(`Digite sua profissão: `));
 
 sobreMim(saudacao,idade,lazer,profissao)
